@@ -1,0 +1,110 @@
+.table-container {
+    width: 100%;
+    height: 600px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    /* Important for react-window */
+    display: flex;
+    flex-direction: column;
+}
+
+.table-header {
+    display: flex;
+    padding: 1rem;
+    background: var(--bg-primary);
+    border-bottom: 2px solid var(--border-color);
+    font-weight: 700;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+}
+
+.table-body-unoptimized {
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.table-row {
+    display: flex;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border-color);
+    align-items: center;
+    background: var(--bg-secondary);
+    transition: background 0.1s;
+}
+
+.table-row:hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.col {
+    padding: 0 0.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.col.id {
+    width: 100px;
+    color: var(--text-secondary);
+    font-family: monospace;
+}
+
+.col.label {
+    width: 150px;
+    font-weight: 500;
+}
+
+.col.value {
+    width: 100px;
+    text-align: right;
+    font-family: monospace;
+}
+
+.col.status {
+    width: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.col.desc {
+    flex: 1;
+    color: var(--text-secondary);
+}
+
+.col.actions {
+    width: 120px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.status-badge {
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.status-badge.active {
+    background: rgba(34, 197, 94, 0.2);
+    color: #4ade80;
+}
+
+.status-badge.pending {
+    background: rgba(250, 204, 21, 0.2);
+    color: #facc15;
+}
+
+.status-badge.archived {
+    background: rgba(148, 163, 184, 0.2);
+    color: #94a3b8;
+}
+
+.status-badge.critical {
+    background: rgba(239, 68, 68, 0.2);
+    color: #f87171;
+}

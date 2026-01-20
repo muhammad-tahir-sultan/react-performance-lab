@@ -1,0 +1,47 @@
+.metrics-panel {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 16px;
+    background: var(--bg-glass);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--card-shadow);
+    color: var(--text-primary);
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+
+.metrics-panel.optimized-border {
+    border-color: rgba(34, 197, 94, 0.5);
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.1);
+}
+
+.metrics-panel.unoptimized-border {
+    border-color: rgba(239, 68, 68, 0.5);
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.1);
+}
+
+.metric-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.metric-group .label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.metric-group .value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    /* Monospace for numbers */
+}
