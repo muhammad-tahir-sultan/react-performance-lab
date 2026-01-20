@@ -81,4 +81,3 @@ npm run dev
 
 ---
 
-*Built as a dedicated artifact for demonstrating Senior/Staff engineering capability.*
