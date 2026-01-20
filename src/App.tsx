@@ -96,7 +96,7 @@ function App() {
         <h1>⚡ React Performance Lab</h1>
         <div className="header-badges">
           <span className="badge">v1.0</span>
-          <span className="badge">Staff Engineer Project</span>
+          <span className="badge">Performance Lab - No More Guessing</span>
         </div>
       </header>
 
